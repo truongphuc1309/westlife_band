@@ -1,0 +1,433 @@
+/*General*/
+html{
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+*{
+    font-family: "Lato", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.row{
+    display: inline;
+}
+
+.col-2{
+    float:left;
+    width: 50%;
+    padding: 0 8px;
+
+}
+
+.col-3{
+    float: left;
+    width: 33.333%;
+}
+
+.col-4{
+float: left;
+width: 25%;
+padding: 0 8px;
+}
+
+.col-full{
+    width: 100%;
+}
+
+.mg-d-15{
+    margin: 0 0 15px 0;
+}
+
+.white-opc-7{
+    color: rgba(255,255,255,0.7) !important;
+}
+
+.text-shadow{
+    text-shadow: 0 0 2px rgba(0,0,0,0.7); ;
+}
+
+.text-center{
+    text-align: center !important;
+}
+/* main */
+
+.main{
+    position: relative;
+}
+
+/*Background*/
+#background{
+    /* background-image: url("/assets/image/background.jpeg"); */
+    /* background-size: cover; */
+    position: fixed;
+    top: 47px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+#background img{
+    width: 100%;
+    height: 100%;
+}
+
+#background .s-background-img{
+    display: none;
+}
+
+/*Header*/
+#header{
+    background-color: #000;
+    height: 47.5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+#header .header-item{ 
+   display: inline-block;
+}
+
+#header .header-item:hover,
+#header .header-item:hover a{
+    background-color: #ccc;
+    color: #000;
+}
+
+#header .header-item a,
+#header .header-item {
+    position: relative;
+    font-size: 15px;
+    font-weight: 450;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 15px 12px;
+}
+
+#header .header-item i {
+    position: relative;
+    top: 1px;
+}
+
+.header-item .header-item-list{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    color: #000;
+    min-width: 160px;
+    list-style: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    display: none;
+}
+
+.header-item li {
+    padding: 12px 12px;
+    text-transform: none;
+}
+
+.header-item:hover .header-item-list{
+    display: block;
+}
+
+.header-item li:hover{
+    background-color: #ccc;
+}
+
+.header-menu{
+    color: #fff;
+    background-color: #000 ;
+    position: absolute;
+    top: 24px;
+    right: 0;
+    transform: translateY(-50%);
+    padding : 15px 24px;
+    display: none;
+}
+
+/* .header-menu:hover{
+    background-color: #ccc;
+    color: #000;
+} */
+
+.header-search {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    padding : 14.5px 24px
+}
+
+.header-search:hover{
+    background-color: #f44336;
+}
+
+/*Content*/
+#container{
+    position: absolute;
+    top:46px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.content-gap{
+    height: 800px;
+    background-image: linear-gradient(0,rgba(255,255,255,0.7),rgba(255,255,255,0));
+}
+/* intro */
+.intro-container{
+    background-color: rgba(255,255,255,0.7);
+}
+
+.content-layout{
+    padding: 64px 8px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+}
+
+.content-intro{
+    width: 100%;
+}
+
+.content-title{
+    text-transform: uppercase;
+    font-size: 30px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.content-slogan{
+    color: rgba(0,0,0,0.4);
+    text-align: center;
+    font-size: 15px;
+    margin: 15px 0;    
+}
+
+.content-description{
+    text-align: justify;
+    font-size: 15px;
+    margin: 15px 0;
+    line-height: 22px;
+}
+
+.members-img{
+    padding:32px;
+}
+
+.members-img::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.member{
+    text-align: center;
+    font-size: 15px;
+}
+
+.member .member-name{
+    margin: 15px 0;
+}
+.member img{
+    height: 160px;
+    width: 70%;
+    border-radius: 5%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+
+/* tour */
+
+.tour-container{
+    background-color: rgba(0,0,0,0.7);
+}
+.tour .month-list{
+    background-color: #fff;
+    margin-top: 40px;
+}
+
+.tour .month-list li{
+    color: rgba(0,0,0,0.5);
+    padding: 8px 16px;
+    list-style: none;
+    border-bottom: solid 1px #ccc;
+}
+
+.month-list li .sold-out{
+    background-color: #f44336;
+    color: #fff;
+    margin: 0 0 0 16px;
+    padding: 2px 8px;
+}
+
+.month-list li::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.month-list .quantity{
+    background-color: #000;
+    color: #fff;
+    padding: 3px 8px;
+    margin: 0 0 1px 0;
+    border-radius: 100%;
+    float: right;
+}
+
+.place-list{
+    padding: 32px 0;
+    margin: 0 -8px;
+}
+
+.place-list::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.place-list .place {
+    padding: 0 8px;
+}
+
+.place .place-img{
+    width: 100%;
+    display: block;
+}
+
+.place .place-img:hover{
+    opacity: 0.5;
+}
+
+.place-body{
+    padding: 16px;
+    background-color: #fff;
+}
+
+.place-name{
+    font-size: 15px;
+    font-weight: 550;
+}
+
+.place-time{
+    font-size: 15px;
+    color: rgba(0,0,0,0.7);
+}
+
+a.buy-tickets{
+    display: inline-block;
+    font-size: 15px;
+    background-color: #000;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.buy-tickets:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+/* Contact */
+
+.contact-container{
+    background-color: rgba(255,255,255,0.7);
+}
+
+.contact-body{
+    padding: 32px 0;
+}
+
+.contact-body::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.contact-body .form div::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.infor-item{
+    font-size: 18px;
+    font-weight: 540;
+    line-height: 36px;
+}
+
+.contact-infor div i {
+    width: 24px;
+    display: inline-block;
+}
+
+.form.col-2 div input{
+    font-size: 18px;
+    width: 100%;
+    margin: 0 0 8px 0;
+}
+
+.form-item{
+    background-color: rgba(255,255,255,0.8);
+    padding: 8px;
+    border: solid  #ccc;
+}
+
+.form-message{
+    margin: 0 8px;
+}
+
+.form-send{
+    font-size: 15px;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    float: right;
+    padding : 12px 16px;
+    border: none;
+    margin: 8px 8px 8px 0;
+
+}
+
+.form-send:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+.map-img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    opacity: 0.9;
+}
+
+/* footer */
+
+#footer{
+    background-color: rgba(255,255,255,0.7);
+    text-align: center;
+    padding: 64px 16px;
+}
+
+#footer div{
+    margin: 8px 0;
+}
+
+#footer .footer-item{
+    color: rgba(0,0,0,0.7);
+    font-size: 18px;
+}
+
+#footer div i:hover{
+    color: rgba(0,0,0,0.4);
+}

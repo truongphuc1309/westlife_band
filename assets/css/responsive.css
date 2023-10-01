@@ -1,0 +1,168 @@
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+    .content-layout {
+         max-width: 760px;
+    }
+
+    .content-description{
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    a.buy-tickets{
+        padding: 14px 16px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .form-send{
+        padding: 16px 24px;
+    }
+
+    .form-item{
+        padding: 12px;
+    }
+
+    #footer .footer-item{
+        font-size: 24px;
+        padding: 12px;
+    }
+}
+
+/* Smartphone */
+
+@media  (max-width:  46.1875em){
+    /* General */
+    .s-width-full{
+        width: 100% !important;
+    }
+
+    .s-col-full{
+        width: 100% !important;
+    }
+    
+    .s-mr-ml-8{
+        margin: 0 0.5em !important;
+    }
+
+    .s-mt-16{
+        margin-top: 1em !important;
+    }
+
+    .s-mb-24{
+        margin-bottom: 1.5em !important;
+    }
+
+    .s-p-16{
+        padding: 1em;
+    }
+
+    .s-pr-pl-8{
+        padding: 0 0.5em !important;
+    }
+
+    /* Component */
+    #header{
+        overflow: hidden;
+    }
+
+    .content-layout {
+        max-width: 22.5em;
+    }
+
+    .content-description{
+        font-size: 1em;
+        line-height: 1.5em ;
+    }
+
+    .member img{
+        height: 15em;
+        width: 80%;
+    }
+
+    a.buy-tickets{
+        padding: 1em 1em;
+    }
+
+    .contact-infor{
+        margin: 0 0 1em 1em;
+    }
+
+    .form-item{
+        padding: 0.75em;
+    }
+    
+    .form-send{
+        margin : 0 0 0 0;
+    }
+
+    #footer .footer-item{
+        font-size: 1.125em;
+        padding: 0.25em;
+    }
+
+    #background .background-img{
+        display: none;
+    }
+
+    #background .s-background-img{
+        display: block;
+    }
+
+    #header{
+        box-shadow: 0 0 10px rgba(255,255,255,0.7);
+    }
+
+    .header-list{
+        margin-top: -12px;
+    }
+
+    #header .header-item{
+        display: block;
+        padding: 12px;
+    } 
+
+     .header-search{
+        display: none;
+    }
+    
+    .header-menu{
+        display: block;
+    }
+    
+    #header li.header-item:first-child:hover,
+    #header li.header-item:first-child:hover a{
+        background-color: #000 !important;
+        color:#fff !important;
+    }
+    
+    li.header-item:last-child{
+        padding: 1.625em 1.5em !important;
+    }
+    
+    li.header-item:last-child ul{
+        background-color:#282A35;
+        color: #fff;
+        box-shadow: none;
+    }
+    
+    li.header-item a{
+        display: block;
+    }
+
+    ul.header-item-list{
+        animation: opentab linear 0.5s;
+    }
+}
+
+@keyframes opentab {
+    from {
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
